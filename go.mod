@@ -1,6 +1,6 @@
 module github.com/launchbynttdata/tf-azurerm-module_primitive-eventhub_authorization_rule
 
-go 1.22.8
+go 1.22.10
 
 require (
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.17.0
