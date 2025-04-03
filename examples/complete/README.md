@@ -59,4 +59,6 @@ No resources.
 | <a name="output_eventhub_namespace_name"></a> [eventhub\_namespace\_name](#output\_eventhub\_namespace\_name) | n/a |
 | <a name="output_auth_rule_id"></a> [auth\_rule\_id](#output\_auth\_rule\_id) | The ID of the authorization rule |
 | <a name="output_auth_rule_name"></a> [auth\_rule\_name](#output\_auth\_rule\_name) | The name of the authorization rule |
+| <a name="output_auth_rule_primary_connection_string"></a> [auth\_rule\_primary\_connection\_string](#output\_auth\_rule\_primary\_connection\_string) | The primary connection string of the authorization rule |
+| <a name="output_auth_rule_secondary_connection_string"></a> [auth\_rule\_secondary\_connection\_string](#output\_auth\_rule\_secondary\_connection\_string) | The secondary connection string of the authorization rule |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

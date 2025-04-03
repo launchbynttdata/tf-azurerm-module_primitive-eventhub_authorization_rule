@@ -145,7 +145,9 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_auth_rule_id"></a> [auth\_rule\_id](#output\_auth\_rule\_id) | The ID of the authorization rule |
-| <a name="output_auth_rule_primary_key"></a> [auth\_rule\_primary\_key](#output\_auth\_rule\_primary\_key) | The primary key of the authorization rule |
-| <a name="output_auth_rule_secondary_key"></a> [auth\_rule\_secondary\_key](#output\_auth\_rule\_secondary\_key) | The secondary key of the authorization rule |
 | <a name="output_auth_rule_name"></a> [auth\_rule\_name](#output\_auth\_rule\_name) | The name of the authoriation rule |
+| <a name="output_auth_rule_primary_key"></a> [auth\_rule\_primary\_key](#output\_auth\_rule\_primary\_key) | The primary key of the authorization rule |
+| <a name="output_auth_rule_primary_connection_string"></a> [auth\_rule\_primary\_connection\_string](#output\_auth\_rule\_primary\_connection\_string) | The primary connection string of the authorization rule |
+| <a name="output_auth_rule_secondary_key"></a> [auth\_rule\_secondary\_key](#output\_auth\_rule\_secondary\_key) | The secondary key of the authorization rule |
+| <a name="output_auth_rule_secondary_connection_string"></a> [auth\_rule\_secondary\_connection\_string](#output\_auth\_rule\_secondary\_connection\_string) | The seondary connection string of the authorization rule |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->

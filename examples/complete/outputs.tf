@@ -33,3 +33,15 @@ output "auth_rule_name" {
   description = "The name of the authorization rule"
   value       = module.auth_rule.auth_rule_name
 }
+
+output "auth_rule_primary_connection_string" {
+  description = "The primary connection string of the authorization rule"
+  value       = module.auth_rule.auth_rule_primary_connection_string
+  sensitive   = true
+}
+
+output "auth_rule_secondary_connection_string" {
+  description = "The secondary connection string of the authorization rule"
+  value       = module.auth_rule.auth_rule_secondary_connection_string
+  sensitive   = true
+}

@@ -15,9 +15,20 @@ output "auth_rule_id" {
   value       = azurerm_eventhub_authorization_rule.auth_rule.id
 }
 
+output "auth_rule_name" {
+  description = "The name of the authoriation rule"
+  value       = azurerm_eventhub_authorization_rule.auth_rule.name
+}
+
 output "auth_rule_primary_key" {
   description = "The primary key of the authorization rule"
   value       = azurerm_eventhub_authorization_rule.auth_rule.primary_key
+  sensitive   = true
+}
+
+output "auth_rule_primary_connection_string" {
+  description = "The primary connection string of the authorization rule"
+  value       = azurerm_eventhub_authorization_rule.auth_rule.primary_connection_string
   sensitive   = true
 }
 
@@ -27,7 +38,8 @@ output "auth_rule_secondary_key" {
   sensitive   = true
 }
 
-output "auth_rule_name" {
-  description = "The name of the authoriation rule"
-  value       = azurerm_eventhub_authorization_rule.auth_rule.name
+output "auth_rule_secondary_connection_string" {
+  description = "The seondary connection string of the authorization rule"
+  value       = azurerm_eventhub_authorization_rule.auth_rule.secondary_connection_string
+  sensitive   = true
 }
