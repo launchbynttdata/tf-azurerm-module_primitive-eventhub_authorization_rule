@@ -39,5 +39,5 @@ func TestEventhubAuthRule(t *testing.T) {
 		}).
 		Build()
 
-	lib.RunSetupTestTeardown(t, *ctx, testimpl.TestEventhubAuthRuleModule)
+	lib.RunNonDestructiveTest(t, *ctx, testimpl.TestComposableEventhubAuthRuleModule)
 }
