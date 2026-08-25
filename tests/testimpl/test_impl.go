@@ -38,10 +38,10 @@ func TestComposableEventhubAuthRuleModule(t *testing.T, ctx types.TestContext) {
 	}
 
 	t.Run("doesAuthorizationRuleExist", func(t *testing.T) {
-		resourceGroupName := terraform.Output(t, ctx.TerratestTerraformOptions(), "resource_group_name")
-		eventhubNamespaceName := terraform.Output(t, ctx.TerratestTerraformOptions(), "eventhub_namespace_name")
-		eventhubName := terraform.Output(t, ctx.TerratestTerraformOptions(), "eventhub_name")
-		authorizationRuleName := terraform.Output(t, ctx.TerratestTerraformOptions(), "auth_rule_name")
+		resourceGroupName := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "resource_group_name")
+		eventhubNamespaceName := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "eventhub_namespace_name")
+		eventhubName := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "eventhub_name")
+		authorizationRuleName := terraform.OutputContext(t, context.Background(), ctx.TerratestTerraformOptions(), "auth_rule_name")
 
 		authorizationRule, err := armEventhubClient.GetAuthorizationRule(context.Background(), resourceGroupName, eventhubNamespaceName, eventhubName, authorizationRuleName, nil)
 		if err != nil {
